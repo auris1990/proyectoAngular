@@ -36,7 +36,7 @@ export class FormularioComponent implements OnInit {
 
   agregarFormulario() {
     console.log(this.formularioForm);
-  }
+  
 
 	const FORMULARIO: Formulario = { 
     
