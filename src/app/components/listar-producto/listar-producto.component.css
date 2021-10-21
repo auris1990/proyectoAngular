@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background: rgb(230, 157, 61);
+}
+.fas {
+    font-size: 1.2rem;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.fa-pen:hover {
+    color: #2659ff;
+}
+
+.fa-trash:hover {
+    color: #ec1d1d;
+}

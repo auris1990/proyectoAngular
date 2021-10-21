@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.btn-bot{
+    background: -moz-linear-gradient(0deg,rgb(255, 0, 0) 0%, rgb(0, 0, 0) 51%, rgb(13, 14, 11) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 51%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 51%, rgb(0, 0, 0)100%);
+    
+}
+
+.boton{
+    display: flex;
+ justify-content: center;
+ padding-top: 20%;
+
+}
+
