@@ -14,7 +14,7 @@ export class FormularioComponent implements OnInit {
 
   formularioForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,private router:Router) {
     this.formularioForm = this.fb.group({
 
       tipoIdentificacion: ['', [Validators.required]],
