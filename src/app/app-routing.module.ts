@@ -25,6 +25,7 @@ const routes: Routes = [
   { path: 'crear-producto',component:CrearProductoComponent},
   { path: 'listar-producto',component:ListarProductoComponent},
   { path: 'editar-producto/:id',component:CrearProductoComponent},
+  { path: 'editar-formulario/:id',component:FormularioComponent},
   { path: '404',component:Pagina404Component},
   { path: '**',redirectTo:'404',pathMatch:'full'}
 ];

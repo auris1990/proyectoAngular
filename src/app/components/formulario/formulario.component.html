@@ -10,25 +10,25 @@
         <div class="col-6 offset-3">
             <form class="mt-5" >
                 <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text" placeholder="Tipo Identificacion" >
+                    <input formControlName="tipoIdentificacion" class="form-control form-control-lm" type="text" placeholder="Tipo Identificacion" >
                     <span *ngIf="formularioForm.get('tipoIdentificacion')?.hasError('required') && formularioForm.get('tipoIdentificacion')?.touched" class="text-danger fw-bold">
                         El campo del tipo de identificacion es obligatorio
                     </span>
                 </div>
                 <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text" placeholder="Numero Identificacion">
+                    <input  formControlName="numeroIdentificacion" class="form-control form-control-lm" type="text" placeholder="Numero Identificacion">
                     <span *ngIf="formularioForm.get('numeroIdentificacion')?.hasError('required') && formularioForm.get('numeroIdentificacion')?.touched" class="text-danger fw-bold">
                         El campo del numero de identificacion es obligatorio
                     </span>
                 </div>
                 <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text" placeholder="Nombre">
+                    <input  formControlName="nombre"class="form-control form-control-lm" type="text" placeholder="Nombre">
                     <span *ngIf="formularioForm.get('nombre')?.hasError('required') && formularioForm.get('nombre')?.touched" class="text-danger fw-bold">
                         EL nombre es obligatorio
                     </span>
                 </div>
                 <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text"placeholder="Apellido" >
+                    <input  formControlName="apellido"class="form-control form-control-lm" type="text" placeholder="Apellido">
                     <span *ngIf="formularioForm.get('apellido')?.hasError('required') && formularioForm.get('apellido')?.touched" class="text-danger fw-bold">
                         los apellidos son obligatorios
                     </span>
@@ -36,28 +36,28 @@
   
   
                               <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text"placeholder="Telefono" >
+                    <input  formControlName="telefono"class="form-control form-control-lm" type="text"placeholder="Telefono" >
                     <span *ngIf="formularioForm.get('telefono')?.hasError('required') && formularioForm.get('telefono')?.touched" class="text-danger fw-bold">
                         El numero telefonico es obligatorio
                     </span>
                 </div>
   
                               <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text"placeholder="Direccion" >
+                    <input  formControlName="direccion"class="form-control form-control-lm" type="text"placeholder="Direccion" >
                     <span *ngIf="formularioForm.get('direccion')?.hasError('required') && formularioForm.get('direccion')?.touched" class="text-danger fw-bold">
                         la direccion es obligatoria
                     </span>
                 </div>
   
                               <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text"placeholder="Email" >
+                    <input  formControlName="email"class="form-control form-control-lm" type="text"placeholder="Email" >
                     <span *ngIf="formularioForm.get('email')?.hasError('required') && formularioForm.get('email')?.touched" class="text-danger fw-bold">
                         El email es obligatorio
                     </span>
                 </div>
   
                              <div class="my-3">
-                    <input  class="form-control form-control-lm" type="text"placeholder="Genero" >
+                    <input formControlName="genero" class="form-control form-control-lm" type="text"placeholder="Genero" >
                     <span *ngIf="formularioForm.get('genero')?.hasError('required') && formularioForm.get('genero')?.touched" class="text-danger fw-bold">
                         El genero es obligatorio
                     </span>
