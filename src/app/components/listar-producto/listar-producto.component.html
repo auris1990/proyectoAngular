@@ -21,15 +21,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Ponque Bimbo</td>
-                    <td>Pasillo</td>
-                    <td> 3000</td>
-                    <td> Bimbo company</td>
+                  <tr *ngFor="let producto of listadoProductos">
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ producto.ubicacion }}</td>
+                    <td>{{ producto.precio }}</td>
+                    <td>{{ producto.proveedor }}</td>
                     <td> 
                         <i class="fas fa-pen" [routerLink]="['/editar-producto/1']" routerLinkActive="router-link-active"></i>
-                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-trash" (click)="eliminarProducto(producto._id)"></i>
             
                     </td>
                   </tr>

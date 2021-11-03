@@ -6,7 +6,7 @@
     <div class="row my-4">
         <div class="col-8 offset-2 d-flex justify-content-between align-content-center">
             <p class="fw-bold h1">Lista de Formularios</p>
-            <button class="btn btn-warning" [routerLink]="['/editar-formulario']" routerLinkActive="router-link-active"><i class="far fa-bolt"></i>Crear Formulario</button>
+            <button class="btn btn-warning" [routerLink]="['/formulario']" routerLinkActive="router-link-active"><i class="far fa-bolt"></i>Crear Formulario</button>
         </div>
         <div class="col-12 ">
             <table class="table">
@@ -24,20 +24,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Cedula de Ciudadania</td>
-                        <td> 88765987</td>
-                        <td>Juan Steban </td>
-                        <td>Gomez Ruiz</td>
-                        <td> 3136547864</td>
-                        <td>calle 20</td>
-                        <td>goruiz@gmail.com</td>
-                        <td>Masculino</td>
+                    <tr *ngFor="let formulario of listadoFormulario">
+                        <td>{{ formulario.tipoidentificacion }}</td>
+                        <td>{{ formulario.numeroidentificacion }}</td>
+                        <td>{{ formulario.nombre}}</td>
+                        <td>{{ formulario.apellido }}</td>
+                        <td>{{ formulario.telefono }}</td>
+                        <td>{{ formulario.direccion }}</td>
+                        <td>{{ formulario.email }}</td>
+                        <td>{{ formulario.genero }}</td>
 
                         <td>
                             <i class="fas fa-pen" [routerLink]="['/editar-formulario/1']" routerLinkActive="router-link-active"></i>
-                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-trash" (click)="eliminarFormulario(formulario._id)"></i>
                         </td>
                     </tr>
                     <tr>

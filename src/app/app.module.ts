@@ -14,6 +14,9 @@ import { ListarProductoComponent } from './components/listar-producto/listar-pro
 import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { ListarFormularioComponent } from './components/listar-formulario/listar-formulario.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { ListarFormularioComponent } from './components/listar-formulario/listar
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],
