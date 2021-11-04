@@ -27,34 +27,10 @@
                     <td>{{ producto.precio }}</td>
                     <td>{{ producto.proveedor }}</td>
                     <td> 
-                        <i class="fas fa-pen" [routerLink]="['/editar-producto/1']" routerLinkActive="router-link-active"></i>
+                      <i class="fas fa-pen" [routerLink]="['/editar-producto', producto._id]" routerLinkActive="router-link-active"></i>
                         <i class="fas fa-trash" (click)="eliminarProducto(producto._id)"></i>
             
-                    </td>
-                  </tr>
-                  <tr>
                     
-                    <td>2</td>
-                    <td> Jugo Nectar Litro</td>
-                    <td>Pasillo</td>
-                    <td> 5000</td>
-                    <td> Nectar company</td>
-                    <td> 
-                        <i class="fas fa-pen" [routerLink]="['/editar-producto/1']" routerLinkActive="router-link-active"></i>
-                        <i class="fas fa-trash"></i>
-            
-                    </td>
-                  </tr>
-                  <tr>
-                    
-                    <td>3</td>
-                        <td> Galleta Ducales</td>
-                        <td>Pasillo</td>
-                        <td> 2000</td>
-                        <td> Noel company</td>
-                        <td> 
-                            <i class="fas fa-pen" [routerLink]="['/editar-producto/1']" routerLinkActive="router-link-active"></i>
-                            <i class="fas fa-trash"></i>
                 
                         </td>
                         </tr>

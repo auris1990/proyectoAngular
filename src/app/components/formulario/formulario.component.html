@@ -2,10 +2,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
 />
 
-<div class="container mt-5" [formGroup]="formularioForm " (ngSubmit)=" agregarFormulario() ">
+<div class="container mt-5" [formGroup]="formularioForm " (ngSubmit)="manipulacion_data_formulario()">
     <div class="row">
         <div class="col-8 offset-2">
-            <p class="h1 text-center fw-bold">Crear Formulario</p>
+            <p class="h1 text-center fw-bold">{{ titulo_formulario }}</p>
         </div>
         <div class="col-6 offset-3">
             <form class="mt-5" >
