@@ -3,7 +3,7 @@ export class Formulario {
 
     _id?: number;
     tipoidentificacion:string;
-    numeroidentificacion:number;
+    numeroidentificacion:string;
     nombre:string;
     apellido:string;
     telefono:string;
@@ -13,7 +13,7 @@ export class Formulario {
 
 
     constructor(tipoidentificacion:string,
-        numeroidentificacion:number,
+        numeroidentificacion:string,
         nombre:string,
         apellido:string,
         telefono:string,

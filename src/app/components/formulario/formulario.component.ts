@@ -14,7 +14,7 @@ import { FormularioService } from 'src/app/services/formulario.service';
 export class FormularioComponent implements OnInit {
 
   formularioForm: FormGroup;
-  titulo_formulario = "Crear producto";
+  titulo_formulario = "Crear formulario";
 	id: String | null;
 
 
@@ -45,8 +45,8 @@ export class FormularioComponent implements OnInit {
 
 	const FORMULARIO: Formulario = { 
     
-    tipoidentificacion: this.formularioForm.get('tipoidentificacion')?.value, 
-    numeroidentificacion: this.formularioForm.get('numeroidentificacion')?.value, 
+    tipoidentificacion: this.formularioForm.get('tipoIdentificacion')?.value, 
+    numeroidentificacion: this.formularioForm.get('numeroIdentificacion')?.value, 
     nombre: this.formularioForm.get('nombre')?.value, 
     apellido: this.formularioForm.get('apellido')?.value,
     telefono: this.formularioForm.get('telefono')?.value,
