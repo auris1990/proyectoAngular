@@ -14,7 +14,7 @@ import { FormularioService } from 'src/app/services/formulario.service';
 export class FormularioComponent implements OnInit {
 
   formularioForm: FormGroup;
-  titulo_formulario = "Crear formulario";
+  titulo_formulario = "CREAR FORMULARIO";
 	id: String | null;
 
 
