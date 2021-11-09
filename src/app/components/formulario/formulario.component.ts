@@ -87,7 +87,7 @@ export class FormularioComponent implements OnInit {
 
 accionSolicitadaform() {
   if (this.id !== null) {
-    //editamos producto
+    //editamos formulario
     this.titulo_formulario = "Editar formulario";
     this._formularioService.getFormulario(this.id).subscribe(data => {
       this.formularioForm.setValue({
