@@ -63,8 +63,23 @@ export class FormularioComponent implements OnInit {
     this._formularioService.putFormulario(this.id, FORMULARIO).subscribe(data => {
       this.router.navigate(['/']);
       Swal.fire({
-        icon: 'success',
-        title: ' Formulario ha si actualizado!'
+
+
+        title:  ' Formulario ha si actualizado!',
+        
+        text: 'Components  Angular Listar Formulario',
+        
+        imageUrl: 'assets/img/indi.jpg',
+        imageWidth: 200,
+        imageHeight: 100,
+        background: '#22DC22 ',
+
+
+        //icon: 'success',
+
+        showConfirmButton: false,
+        timer: 2500
+      //  title: ' Formulario ha si actualizado!'
       })
     }, error => {
       console.log(error)
@@ -74,8 +89,23 @@ export class FormularioComponent implements OnInit {
     this._formularioService.postFormularios(FORMULARIO).subscribe(data => {
       this.router.navigate(['/']);
       Swal.fire({
-        icon: 'success',
-        title: 'Formulario registrado!'
+
+        title:  ' Formulario Registrado!',
+        
+        text: 'Components  Angular Formulario',
+        
+        imageUrl: 'assets/img/indi.jpg',
+        imageWidth: 200,
+        imageHeight: 100,
+        background: '#26E0DA ',
+
+
+        //icon: 'success',
+
+        showConfirmButton: false,
+        timer: 2500
+       // icon: 'success',
+       // title: 'Formulario registrado!'
       })
     }, error => {
       console.log(error)
@@ -91,8 +121,8 @@ accionSolicitadaform() {
     this.titulo_formulario = "Editar formulario";
     this._formularioService.getFormulario(this.id).subscribe(data => {
       this.formularioForm.setValue({
-        tipoidentificacion: data. tipoidentificacion, //, Validators.email, Validators.minLength(5)
-        numeroidentificacion: data.numeroidentificacion,
+        tipoIdentificacion: data. tipoidentificacion, //, Validators.email, Validators.minLength(5)
+        numeroIdentificacion: data.numeroidentificacion,
         nombre: data.nombre,
         apellido: data.apellido,
         telefono: data.telefono,
