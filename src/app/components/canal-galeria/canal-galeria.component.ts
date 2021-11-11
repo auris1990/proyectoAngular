@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-canal-galeria',
   templateUrl: './canal-galeria.component.html',
@@ -11,5 +12,10 @@ export class CanalGaleriaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  
+
+
 
 }
